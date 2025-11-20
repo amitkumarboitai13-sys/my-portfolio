@@ -399,72 +399,20 @@
             }
         }
 
-        /* 📱 Mobile Phones (up to 576px) */
-@media (max-width: 576px) {
-    .nav-links {
-        display: none;
-    }
-    
-    .mobile-menu {
-        display: block;
-    }
-    
-    .hero-text h1 {
-        font-size: 1.75rem; /* Smaller for phones */
-    }
-    
-    .section-title h2 {
-        font-size: 1.5rem;
-    }
-    
-    /* Phone-specific adjustments */
-    .container {
-        padding: 0 0.5rem;
-    }
-    
-    .btn {
-        width: 100%;
-        padding: 12px;
-    }
-    
-    /* Stack all elements */
-    .grid-container {
-        grid-template-columns: 1fr;
-    }
-}
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
 
-/* 📟 Tablets (577px to 768px) */
-@media (min-width: 577px) and (max-width: 768px) {
-    .nav-links {
-        display: none; /* Still hide desktop nav */
-    }
-    
-    .mobile-menu {
-        display: block;
-    }
-    
-    .hero-text h1 {
-        font-size: 2.25rem; /* Slightly larger than phones */
-    }
-    
-    .section-title h2 {
-        font-size: 2rem;
-    }
-    
-    /* Tablet-specific adjustments */
-    .container {
-        padding: 0 1rem;
-    }
-    
-    /* 2-column layout for tablets */
-    .grid-container {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 1.5rem;
-    }
-    
-    .btn {
-        width: auto; /* Not full width on tablets */
-        padding: 12px 24px;
-    }
-}
-        
+            .mobile-menu {
+                display: block;
+            }
+
+            .hero-text h1 {
+                font-size: 2rem;
+            }
+
+            .section-title h2 {
+                font-size: 2rem;
+            }
+        }
